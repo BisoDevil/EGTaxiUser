@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context="com.globalapp.egtaxi.UserActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp">
+
+            <EditText
+                android:id="@+id/txtFullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/full_name"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:visibility="gone" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/txtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/mail"
+                android:singleLine="true"
+                android:visibility="gone" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:pointerIcon="none"
+            app:errorEnabled="false"
+            app:hintEnabled="true"
+            app:passwordToggleEnabled="false">
+
+            <EditText
+                android:id="@+id/txtPhoneNO"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/phone_number"
+                android:inputType="phone"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:visibility="visible" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/txtPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cursorVisible="false"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:password="false"
+                android:singleLine="true"
+                android:textStyle="italic" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/colorPrimary"
+            android:checked="false"
+            android:elevation="1dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:onClick="btnMain"
+            android:text="@string/login"
+            android:textColor="@android:color/background_light"
+            android:textOff="@string/login"
+            android:textOn="@string/register"
+            android:textSize="16sp"
+            android:textStyle="normal|bold"
+            android:typeface="sans" />
+
+
+    </LinearLayout>
+
+    <view
+        android:id="@+id/loginButton"
+        class="com.facebook.login.widget.LoginButton"
+
+        layout_below="@+id/linearLayout2"
+        layout_centerHorizontal="true"
+        layout_marginTop="22dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginRight="52dp"
+        android:textScaleX=".8"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/txtNewUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:fontFamily="sans-serif-condensed"
+        android:onClick="switchUser"
+        android:text="@string/new_user"
+        android:textAllCaps="true"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/txtForget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:onClick="getPassword"
+        android:text="@string/forget_password" />
+
+
+</RelativeLayout>

@@ -1,0 +1,93 @@
+<resources>
+    <string name="app_name">EG Taxi</string>
+    <string name="title_activity_map" translatable="false">EG TAXI</string>
+    <string name="welcome">Welcome back </string>
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+    <string name="please_wait">One moment please…</string>
+    <string name="logging_in">Logging In</string>
+    <string name="registering">Registering</string>
+    <string name="action_settings">Settings</string>
+    <string name="logout">Logout</string>
+    <string name="my_trips">My Trips</string>
+    <string name="profile">Edit Profile</string>
+    <string name="favorite">Favorites</string>
+    <string name="chat">Chat</string>
+    <string name="feedback">Feedback</string>
+    <string name="about">About</string>
+    <string name="feedback_hint">How can we help you?, Please send us your feedback</string>
+    <string name="total_distance">Total Distance (KM)</string>
+    <string name="moving_time">Moving Time</string>
+    <string name="stopping_time">Stopping Time</string>
+    <string name="total_time">Total Time</string>
+    <string name="speed">Speed (Km/h)</string>
+    <string name="total_money">Total Money (L.E.)</string>
+    <string name="message_hint">Type your message</string>
+    <string name="full_name">Full Name</string>
+    <string name="mail">E-MAIL</string>
+    <string name="phone_number">PHONE NUMBER</string>
+    <string name="password">PASSWORD</string>
+    <string name="login">LOGIN</string>
+    <string name="register">REGISTER</string>
+    <string name="new_user">I\'m a new user</string>
+    <string name="already_user">I\'m already user</string>
+    <string name="facebook_app_id" translatable="false">1782173565380690</string>
+    <string name="search_hint">I will go to…</string>
+    <string name="fav_hint">Type your place comment</string>
+    <string name="send">Send</string>
+    <string name="about_message">EG Taxi V1.1 is an application for Egypt white taxi , it provides best price, security and relax for
+    our customers</string>
+    <string name="add_comment">Add your comment</string>
+    <string name="update">Update</string>
+    <string name="choose_lan">Language</string>
+    <string name="arabic">Arabic</string>
+    <string name="english">English</string>
+    <string name="setting">Settings</string>
+    <string name="no_driver">There is no drivers around</string>
+    <string name="time_driver"> to your current location</string>
+    <string name="notification">Notifications from driver</string>
+    <string name="driver_name">Driver Name : </string>
+    <string name="driver_phone">Driver Phone : </string>
+    <string name="call">Call</string>
+    <string name="version" translatable="false">Version 1.1</string>
+    <string name="le">L.E</string>
+    <!-- Screens background -->
+    <string name="next">Next</string>
+    <string name="skip">Skip</string>
+    <string name="finish">Finish</string>
+    <string name="start">Start</string>
+    <string name="title_slide1">From anywhere!</string>
+    <string name="desc_slide1">Watch your driver come to you.</string>
+    <string name="title_slide2">Payments!</string>
+    <string name="desc_slide2">See your fees as you go.</string>
+    <string name="title_slide3">Trust</string>
+    <string name="desc_slide3">Safe, reliable, licensed drivers.</string>
+    <string name="date">Date</string>
+    <string name="notification_info">Receive notification from driver when he is around to tell you he is always available for you</string>
+    <string name="tour">Take a tour</string>
+    <string name="restart">Please restart the App </string>
+    <string name="min">MIN</string>
+    <string name="km">KM</string>
+    <string name="hours">Hours</string>
+    <string name="updated">Data has been updated</string>
+    <string name="updating">Updating…</string>
+    <string name="forget_password">Forget password?</string>
+    <string name="reset_meesage">Please check your mail to reset your password</string>
+    <string name="added">Added</string>
+    <string name="submit">Submit</string>
+    <string name="fill_your_phone">Please fill your phone No.</string>
+    <string name="take_pic">Take a new picture</string>
+    <string name="load_gallery">Load from gallery</string>
+    <string name="pupnub_puplish_key" translatable="false">pub-c-3049c3a8-c004-4678-93df-112ab7deae23</string>
+    <string name="pubnub_sub_key" translatable="false">sub-c-5100f80c-cd0d-11e6-b2ab-0619f8945a4f</string>
+    <string name="notification_fee">Your current trip fees</string>
+    <string name="cancel_order">Cancel order</string>
+    <string name="request_submitted">Your order has been submitted…</string>
+    <string name="order_canceled">Your order has been canceled successfully</string>
+    <string name="state">Status</string>
+    <string name="car_no">Car No. :</string>
+    <string name="coming">Coming…</string>
+    <string name="arrived">Arrived</string>
+    <string name="on_trip">On trip…</string>
+    <string name="provider_disabled">Your GPS is disabled, Please note that your fee will be estimated so you will pay as Driver Fees </string>
+</resources>

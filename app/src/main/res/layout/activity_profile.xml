@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.globalapp.egtaxi.ProfileActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="25dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.25"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.19">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgEditProfile"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:onClick="loadImage"
+                android:src="@drawable/avatar"
+                app:civ_border_color="@color/cardview_light_background"
+                app:civ_border_width="3dp"
+                app:civ_fill_color="@color/cardview_light_background" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/txtUpdateFullName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:drawableRight="@android:drawable/ic_menu_myplaces"
+                    android:drawableTint="@color/com_facebook_button_background_color"
+                    android:drawableTintMode="src_over"
+                    android:enabled="true"
+                    android:hint="@string/full_name"
+                    android:inputType="textPersonName"
+                    android:maxLines="1" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/txtUpdateEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@android:drawable/sym_action_email"
+                    android:drawableTint="@color/com_facebook_button_background_color"
+                    android:enabled="true"
+                    android:hint="@string/mail"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:singleLine="false" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:pointerIcon="none"
+                app:errorEnabled="false"
+                app:hintEnabled="true"
+                app:passwordToggleEnabled="false">
+
+                <EditText
+                    android:id="@+id/txtUpdatePhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@android:drawable/ic_menu_call"
+                    android:drawableTint="@color/com_facebook_button_background_color"
+                    android:enabled="true"
+                    android:hint="@string/phone_number"
+                    android:inputType="phone"
+                    android:maxLines="1"
+                    android:selectAllOnFocus="false"
+                    android:singleLine="false" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="true">
+
+                <EditText
+                    android:id="@+id/txtUpdatePassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:cursorVisible="false"
+                    android:drawableTint="@color/colorPrimary"
+                    android:enabled="true"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:password="false"
+                    android:singleLine="false" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorPrimary"
+                android:fontFamily="sans-serif-smallcaps"
+                android:onClick="updateUser"
+                android:text="@string/update"
+                android:textColor="@android:color/background_light"
+                android:textStyle="normal|bold"
+                android:typeface="sans" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

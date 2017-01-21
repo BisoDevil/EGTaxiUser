@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#068ff9</color>
+
+    <!-- Screens background -->
+    <color name="bg_screen1">#FF7043</color>
+    <color name="bg_screen2">#ffbb00</color>
+    <color name="bg_screen3">#9ccc65</color>
+
+    <!-- dots active colors -->
+    <color name="dot_active">#068ff9</color>
+
+
+    <!-- dots inactive colors -->
+    <color name="dot_inactive">#ffffff</color>
+    <color name="window_background">#1f000000</color>
+</resources>
