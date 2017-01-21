@@ -325,7 +325,7 @@ class Stopwatch {
         mins = mins % 60;
         secs = secs % 60;
         milliseconds = (int) (getElapsedTime() % 1000);
-        time = String.format("%02d", mins) + ":" + String.format("%02d", secs);
+        time = String.format(Locale.US, "%02d", mins) + ":" + String.format(Locale.US, "%02d", secs);
 
 
         return time;
